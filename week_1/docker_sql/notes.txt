@@ -1,0 +1,23 @@
+1. docker run hello-world 
+pulls image from docker hub, downloads in and then creates and runs a container from that image.
+
+2. docker run -it python:3.9
+pulls python version 3.9 from docker hub, creates the container and runs it in interactive terminal mode
+i.e -it = interactive terminal.
+
+3. docker run -it --entrypoint=bash python:3.9
+--entrypoint is what is executed when the container is run.
+
+4. The Dockerfile contains specifics on all the things we want to run/do when we run or build a container
+from an image.
+
+5. docker build -t test:pandas .
+build an image from instruction in Dockerfile -t tags/name :pandas version
+. build it in the current directory i.e find the Dockerfile in this directory.
+
+6. docker run -t test:pandas
+
+--- INGESTING DATA ---
+1. -e flag represents the configuration of enviroment variables,
+ -v flag represents volumes i.e a way of mapping the folder in our host machine to
+ a folder in the container. this is known as 'mounting'.
