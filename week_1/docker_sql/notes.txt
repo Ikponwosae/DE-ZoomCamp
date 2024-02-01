@@ -8,6 +8,8 @@ i.e -it = interactive terminal.
 3. docker run -it --entrypoint=bash python:3.9
 --entrypoint is what is executed when the container is run.
 
+ --YOU HAVE TO REBUILD THE IMAGE AFTER EVERY CHANGE IN THE Dockerfile--
+
 4. The Dockerfile contains specifics on all the things we want to run/do when we run or build a container
 from an image.
 
